@@ -18,11 +18,8 @@ class IgEnvironment:
 
         self.driver_path = driver_path
 
-        
-        self.username = "dcr.z0"
-        self.password = "Lolj123jdq"
-        # self.username = str(input("Username: "))
-        # self.password = str(input("Password: "))
+        self.username = str(input("Username: "))
+        self.password = str(input("Password: "))
 
         self.final_search_field = ""
 
