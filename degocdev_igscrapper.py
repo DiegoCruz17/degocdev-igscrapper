@@ -93,7 +93,13 @@ class IgEnvironment:
             print("The search query could not be found")
 
 if __name__ == "__main__":
-    app = IgEnvironment(input("Enter the chromedriver path: "))
+    while True:
+        try:
+            app = IgEnvironment(input("Enter the chromedriver path: "))
+            break
+        except:
+            print("There was an error")
+            continue
     
     while True:
         warnings.filterwarnings("ignore")
